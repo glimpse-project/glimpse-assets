@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gunzip -kfl *.gz
+gunzip -kf *.gz
