@@ -1,0 +1,81 @@
+{
+    "motion_detection": true,
+    "joint_refinement": true,
+    "max_prediction_delta": 100,
+    "prediction_decay": 1,
+    "bone_sanitisation": false,
+    "skeleton_validation": true,
+    "skeleton_min_skeleton": 1000,
+    "skeleton_max_distance": 0.20000000298023224,
+    "debug_label": "most likely",
+    "cloud_mode": "labels",
+    "debug_stage": "label_inference",
+    "_stages": {
+        "acquire": {
+            "apply_depth_distortion": false
+        },
+        "gap_fill": {
+            "min_depth": 0.5,
+            "max_depth": 2.8440001010894775
+        },
+        "downsample": {
+            "seg_res": 1
+        },
+        "ground_align": {},
+        "naive_find_floor": {
+            "floor_threshold": 0.10000000149011612
+        },
+        "naive_cluster": {
+            "na_cluster_tolerance": 0.10000000149011612,
+            "na_cluster_min_width": 0.15000000596046448,
+            "na_cluster_min_height": 0.80000001192092896,
+            "na_cluster_min_depth": 0.05000000074505806,
+            "na_cluster_max_width": 2,
+            "na_cluster_max_height": 2.4500000476837158,
+            "na_cluster_max_depth": 1.5
+        },
+        "codebook_align": {},
+        "codebook_classify": {
+            "seg_tb": 0.05000000074505806,
+            "seg_tf": 0.20000000298023224,
+            "seg_N": 100,
+            "seg_b": 3,
+            "seg_gamma": 100,
+            "seg_alpha": 200,
+            "seg_psi": 0.80000001192092896,
+            "seg_timeout": 3
+        },
+        "codebook_cluster": {
+            "cb_cluster_tolerance": 0.10000000149011612,
+            "cb_cluster_min_width": 0.15000000596046448,
+            "cb_cluster_min_height": 0.80000001192092896,
+            "cb_cluster_min_depth": 0.05000000074505806,
+            "cb_cluster_max_width": 2,
+            "cb_cluster_max_height": 2.4500000476837158,
+            "cb_cluster_max_depth": 1.5
+        },
+        "filter_clusters": {},
+        "project_clusters": {},
+        "select_cluster": {},
+        "label_inference": {
+            "inf_res": 2,
+            "li_use_threads": true,
+            "li_flip_labels": true
+        },
+        "joint_weights": {},
+        "joint_inference": {
+            "li_fast_clustering": true
+        },
+        "refine_skeleton": {
+            "bone_length_variance": 0.05000000074505806,
+            "bone_rotation_variance": 360
+        },
+        "sanitize_skeleton": {
+            "parent_joint_move_threshold": 1.5,
+            "parent_joint_outlier_factor": 2,
+            "bone_length_outlier_factor": 1.1000000238418579,
+            "bone_rotation_outlier_factor": 2
+        },
+        "update_codebook": {}
+    }
+}
