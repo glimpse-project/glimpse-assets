@@ -1,3 +1,3 @@
 #!/bin/bash
 
-gunzip -kf *.gz
+unlzma -kf *.lzma

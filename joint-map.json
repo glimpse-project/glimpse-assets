@@ -29,8 +29,8 @@
     },
     {
         "joint": "lowerarm_l.tail",
-        "labels": [ 16 ],
-        "labels_flipped": [ 18 ],
+        "labels": [ 17 ],
+        "labels_flipped": [ 19 ],
         "connections": []
     },
     {
@@ -41,8 +41,8 @@
     },
     {
         "joint": "lowerarm_r.tail",
-        "labels": [ 18 ],
-        "labels_flipped": [ 16 ],
+        "labels": [ 19 ],
+        "labels_flipped": [ 17 ],
         "connections": []
     },
     {
@@ -72,12 +72,12 @@
     {
         "joint": "foot_l.head",
         "labels": [ 28 ],
-        "labels_flipped": [ 30 ],
+        "labels_flipped": [ 29 ],
         "connections" : []
     },
     {
         "joint": "foot_r.head",
-        "labels": [ 30 ],
+        "labels": [ 29 ],
         "labels_flipped": [ 28 ],
         "connections": []
     }
