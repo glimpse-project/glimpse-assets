@@ -1,18 +1,30 @@
 {
     "head": "head.tail",
     "tail": "neck_01.head",
+    "min_length": 0.20392803847789764,
+    "mean_length": 0.26031386852264404,
+    "max_length": 0.28307664394378662,
     "children": [
         {
             "head": "neck_01.head",
             "tail": "upperarm_l.head",
+            "min_length": 0.16785785555839539,
+            "mean_length": 0.18940196931362152,
+            "max_length": 0.20683448016643524,
             "children": [
                 {
                     "head": "upperarm_l.head",
                     "tail": "lowerarm_l.head",
+                    "min_length": 0.23236088454723358,
+                    "mean_length": 0.25913479924201965,
+                    "max_length": 0.29955244064331055,
                     "children": [
                         {
                             "head": "lowerarm_l.head",
-                            "tail": "lowerarm_l.tail"
+                            "tail": "lowerarm_l.tail",
+                            "min_length": 0.21058595180511475,
+                            "mean_length": 0.24723856151103973,
+                            "max_length": 0.27713713049888611
                         }
                     ]
                 }
@@ -21,14 +33,23 @@
         {
             "head": "neck_01.head",
             "tail": "upperarm_r.head",
+            "min_length": 0.16785787045955658,
+            "mean_length": 0.18940196931362152,
+            "max_length": 0.20683446526527405,
             "children": [
                 {
                     "head": "upperarm_r.head",
                     "tail": "lowerarm_r.head",
+                    "min_length": 0.23236089944839478,
+                    "mean_length": 0.25913479924201965,
+                    "max_length": 0.29955270886421204,
                     "children": [
                         {
                             "head": "lowerarm_r.head",
-                            "tail": "lowerarm_r.tail"
+                            "tail": "lowerarm_r.tail",
+                            "min_length": 0.21058590710163116,
+                            "mean_length": 0.24723857641220093,
+                            "max_length": 0.27713802456855774
                         }
                     ]
                 }
@@ -37,14 +58,23 @@
         {
             "head": "neck_01.head",
             "tail": "thigh_l.head",
+            "min_length": 0.10540647059679031,
+            "mean_length": 0.57514172792434692,
+            "max_length": 0.68673247098922729,
             "children": [
                 {
                     "head": "thigh_l.head",
                     "tail": "thigh_l.tail",
+                    "min_length": 0.37130746245384216,
+                    "mean_length": 0.42481774091720581,
+                    "max_length": 0.51652234792709351,
                     "children": [
                         {
                             "head": "thigh_l.tail",
-                            "tail": "foot_l.head"
+                            "tail": "foot_l.head",
+                            "min_length": 0.37912005186080933,
+                            "mean_length": 0.42826372385025024,
+                            "max_length": 0.46170279383659363
                         }
                     ]
                 }
@@ -53,14 +83,23 @@
         {
             "head": "neck_01.head",
             "tail": "thigh_r.head",
+            "min_length": 0.17675650119781494,
+            "mean_length": 0.57155144214630127,
+            "max_length": 0.68329137563705444,
             "children": [
                 {
                     "head": "thigh_r.head",
                     "tail": "thigh_r.tail",
+                    "min_length": 0.37130728363990784,
+                    "mean_length": 0.42481774091720581,
+                    "max_length": 0.51652133464813232,
                     "children": [
                         {
                             "head": "thigh_r.tail",
-                            "tail": "foot_r.head"
+                            "tail": "foot_r.head",
+                            "min_length": 0.37911996245384216,
+                            "mean_length": 0.42826372385025024,
+                            "max_length": 0.46170240640640259
                         }
                     ]
                 }
