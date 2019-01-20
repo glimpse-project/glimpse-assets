@@ -1,0 +1,117 @@
+{
+    "name": "Head to neck",
+    "head": "head.tail",
+    "tail": "neck_01.head",
+    "children": [
+        {
+            "name": "Left clavicle",
+            "head": "neck_01.head",
+            "tail": "upperarm_l.head",
+            "children": [
+                {
+                    "name": "Left bicep",
+                    "head": "upperarm_l.head",
+                    "tail": "lowerarm_l.head",
+                    "children": [
+                        {
+                            "name": "Left tricep",
+                            "head": "lowerarm_l.head",
+                            "tail": "lowerarm_l.tail"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Right clavicle",
+            "head": "neck_01.head",
+            "tail": "upperarm_r.head",
+            "children": [
+                {
+                    "name": "Right bicep",
+                    "head": "upperarm_r.head",
+                    "tail": "lowerarm_r.head",
+                    "children": [
+                        {
+                            "name": "Right tricep",
+                            "head": "lowerarm_r.head",
+                            "tail": "lowerarm_r.tail"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Torso",
+            "head": "neck_01.head",
+            "tails": [
+                {
+                    "name": "thigh_l.head",
+                    "weight": 1.0
+                },
+                {
+                    "name": "thigh_r.head",
+                    "weight": 1.0
+                }
+            ],
+            "children": [
+                {
+                    "name": "Left hip",
+                    "heads": [
+                        {
+                            "name": "thigh_l.head",
+                            "weight": 1.0
+                        },
+                        {
+                            "name": "thigh_r.head",
+                            "weight": 1.0
+                        }
+                    ],
+                    "tail": "thigh_l.head",
+                    "children": [
+                        {
+                            "name": "Left thigh",
+                            "head": "thigh_l.head",
+                            "tail": "thigh_l.tail",
+                            "children": [
+                                {
+                                    "name": "Left shin",
+                                    "head": "thigh_l.tail",
+                                    "tail": "foot_l.head"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Right hip",
+                    "heads": [
+                        {
+                            "name": "thigh_l.head",
+                            "weight": 1.0
+                        },
+                        {
+                            "name": "thigh_r.head",
+                            "weight": 1.0
+                        }
+                    ],
+                    "tail": "thigh_r.head",
+                    "children": [
+                        {
+                            "name": "Right thigh",
+                            "head": "thigh_r.head",
+                            "tail": "thigh_r.tail",
+                            "children": [
+                                {
+                                    "name": "Right shin",
+                                    "head": "thigh_r.tail",
+                                    "tail": "foot_r.head"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

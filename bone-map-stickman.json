@@ -1,0 +1,276 @@
+{
+    "name": "Head to neck",
+    "head": "head.tail",
+    "tail": "neck_01.head",
+    "min_length": 0.20052483677864075,
+    "mean_length": 0.26236748695373535,
+    "max_length": 0.28307598829269409,
+    "children": [
+        {
+            "name": "Left clavicle",
+            "head": "neck_01.head",
+            "tail": "upperarm_l.head",
+            "min_length": 0.16785778105258942,
+            "mean_length": 0.19082838296890259,
+            "max_length": 0.20683450996875763,
+            "rotation_constraint": {
+                "rotation": {
+                    "w": 0.99521791934967041,
+                    "x": -0.097680255770683289,
+                    "y": 3.1901519186722238e-12,
+                    "z": 5.1042429831393843e-12
+                },
+                "radius": 1.8572114706039429
+            },
+            "children": [
+                {
+                    "name": "Left bicep",
+                    "head": "upperarm_l.head",
+                    "tail": "lowerarm_l.head",
+                    "min_length": 0.23236073553562164,
+                    "mean_length": 0.26323801279067993,
+                    "max_length": 0.29955250024795532,
+                    "rotation_constraint": {
+                        "rotation": {
+                            "w": 0.99485939741134644,
+                            "x": 0.10125228017568588,
+                            "y": 0.0013652513734996319,
+                            "z": 0.0009698597714304924
+                        },
+                        "radius": 2.2952849864959717
+                    },
+                    "children": [
+                        {
+                            "name": "Left tricep",
+                            "head": "lowerarm_l.head",
+                            "tail": "lowerarm_l.tail",
+                            "min_length": 0.21058598160743713,
+                            "mean_length": 0.25032621622085571,
+                            "max_length": 0.27713710069656372,
+                            "rotation_constraint": {
+                                "rotation": {
+                                    "w": 0.94502496719360352,
+                                    "x": 0.32699799537658691,
+                                    "y": -1.3812091227694001e-11,
+                                    "z": 4.6961111214993689e-12
+                                },
+                                "radius": 2.1577696800231934
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Right clavicle",
+            "head": "neck_01.head",
+            "tail": "upperarm_r.head",
+            "min_length": 0.16785776615142822,
+            "mean_length": 0.19082838296890259,
+            "max_length": 0.2068345695734024,
+            "rotation_constraint": {
+                "rotation": {
+                    "w": 0.96901130676269531,
+                    "x": 0.24701608717441559,
+                    "y": -0.00011039907985832542,
+                    "z": -3.8445396057795733e-05
+                },
+                "radius": 2.5231788158416748
+            },
+            "children": [
+                {
+                    "name": "Right bicep",
+                    "head": "upperarm_r.head",
+                    "tail": "lowerarm_r.head",
+                    "min_length": 0.23236094415187836,
+                    "mean_length": 0.26323801279067993,
+                    "max_length": 0.29955276846885681,
+                    "rotation_constraint": {
+                        "rotation": {
+                            "w": 0.99070835113525391,
+                            "x": -0.13599972426891327,
+                            "y": 0.00071512634167447686,
+                            "z": 0.00074965611565858126
+                        },
+                        "radius": 2.5501008033752441
+                    },
+                    "children": [
+                        {
+                            "name": "Right tricep",
+                            "head": "lowerarm_r.head",
+                            "tail": "lowerarm_r.tail",
+                            "min_length": 0.21058595180511475,
+                            "mean_length": 0.25032621622085571,
+                            "max_length": 0.27713796496391296,
+                            "rotation_constraint": {
+                                "rotation": {
+                                    "w": 0.95202928781509399,
+                                    "x": 0.30600708723068237,
+                                    "y": 2.9204340768612669e-12,
+                                    "z": -1.9191422756525967e-11
+                                },
+                                "radius": 2.168830394744873
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Torso",
+            "head": "neck_01.head",
+            "tails": [
+                {
+                    "name": "thigh_l.head",
+                    "weight": 1
+                },
+                {
+                    "name": "thigh_r.head",
+                    "weight": 1
+                }
+            ],
+            "min_length": 0.13133370876312256,
+            "mean_length": 0.57016348838806152,
+            "max_length": 0.64968419075012207,
+            "rotation_constraint": {
+                "rotation": {
+                    "w": 0.9987139105796814,
+                    "x": 0.050700951367616653,
+                    "y": -1.4914759965262148e-12,
+                    "z": -2.3440385917006257e-12
+                },
+                "radius": 1.1781638860702515
+            },
+            "children": [
+                {
+                    "name": "Left hip",
+                    "tail": "thigh_l.head",
+                    "heads": [
+                        {
+                            "name": "thigh_l.head",
+                            "weight": 1
+                        },
+                        {
+                            "name": "thigh_r.head",
+                            "weight": 1
+                        }
+                    ],
+                    "min_length": 0.094264812767505646,
+                    "mean_length": 0.1041109561920166,
+                    "max_length": 0.11367015540599823,
+                    "rotation_constraint": {
+                        "rotation": {
+                            "w": 0.97101324796676636,
+                            "x": -0.23892137408256531,
+                            "y": -0.0070434184744954109,
+                            "z": -0.00051362573867663741
+                        },
+                        "radius": 2.5351762771606445
+                    },
+                    "children": [
+                        {
+                            "name": "Left thigh",
+                            "head": "thigh_l.head",
+                            "tail": "thigh_l.tail",
+                            "min_length": 0.37130743265151978,
+                            "mean_length": 0.43237054347991943,
+                            "max_length": 0.51652252674102783,
+                            "rotation_constraint": {
+                                "rotation": {
+                                    "w": 0.97510749101638794,
+                                    "x": 0.22159384191036224,
+                                    "y": -0.00080817262642085552,
+                                    "z": 0.0078098094090819359
+                                },
+                                "radius": 2.5960726737976074
+                            },
+                            "children": [
+                                {
+                                    "name": "Left shin",
+                                    "head": "thigh_l.tail",
+                                    "tail": "foot_l.head",
+                                    "min_length": 0.37911996245384216,
+                                    "mean_length": 0.43434572219848633,
+                                    "max_length": 0.46170294284820557,
+                                    "rotation_constraint": {
+                                        "rotation": {
+                                            "w": 0.95878952741622925,
+                                            "x": -0.28411725163459778,
+                                            "y": -1.3306372605333128e-13,
+                                            "z": -4.7237621800255702e-12
+                                        },
+                                        "radius": 2.2380545139312744
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Right hip",
+                    "tail": "thigh_r.head",
+                    "heads": [
+                        {
+                            "name": "thigh_l.head",
+                            "weight": 1
+                        },
+                        {
+                            "name": "thigh_r.head",
+                            "weight": 1
+                        }
+                    ],
+                    "min_length": 0.094264760613441467,
+                    "mean_length": 0.1041109561920166,
+                    "max_length": 0.11367014050483704,
+                    "rotation_constraint": {
+                        "rotation": {
+                            "w": 0.96451061964035034,
+                            "x": 0.25748857855796814,
+                            "y": -0.0031241339165717363,
+                            "z": -0.058388035744428635
+                        },
+                        "radius": 2.4324021339416504
+                    },
+                    "children": [
+                        {
+                            "name": "Right thigh",
+                            "head": "thigh_r.head",
+                            "tail": "thigh_r.tail",
+                            "min_length": 0.37130722403526306,
+                            "mean_length": 0.43237054347991943,
+                            "max_length": 0.51652133464813232,
+                            "rotation_constraint": {
+                                "rotation": {
+                                    "w": 0.9752165675163269,
+                                    "x": -0.21735569834709167,
+                                    "y": -0.0059105595573782921,
+                                    "z": 0.040917117148637772
+                                },
+                                "radius": 2.4305505752563477
+                            },
+                            "children": [
+                                {
+                                    "name": "Right shin",
+                                    "head": "thigh_r.tail",
+                                    "tail": "foot_r.head",
+                                    "min_length": 0.37911990284919739,
+                                    "mean_length": 0.43434572219848633,
+                                    "max_length": 0.46170243620872498,
+                                    "rotation_constraint": {
+                                        "rotation": {
+                                            "w": 0.95327353477478027,
+                                            "x": -0.30210831761360168,
+                                            "y": -2.1335249105608467e-12,
+                                            "z": 1.1622314438977654e-12
+                                        },
+                                        "radius": 2.235572338104248
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
